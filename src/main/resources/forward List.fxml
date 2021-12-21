@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timetable.controllers.ForwardList">
+   <children>
+      <ImageView fx:id="background" fitHeight="600.0" fitWidth="904.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="infoForwardTable" layoutX="40.0" layoutY="159.0" prefHeight="394.0" prefWidth="488.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></TableView>
+      <Button fx:id="backToHome" layoutX="787.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleBackToHomeButton" prefHeight="39.0" prefWidth="78.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Button>
+      <Button fx:id="update" layoutX="565.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleUpdateAction" prefHeight="39.0" prefWidth="212.0" text="Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Button>
+      <TextField fx:id="title" layoutX="40.0" layoutY="121.0" prefHeight="31.0" prefWidth="253.0" promptText="Enter the JOB TITLE here...">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></TextField>
+      <ChoiceBox fx:id="stHour" layoutX="640.0" layoutY="84.0" prefHeight="31.0" prefWidth="100.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <ChoiceBox fx:id="stMin" layoutX="764.0" layoutY="84.0" prefHeight="27.0" prefWidth="100.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <Label layoutX="750.0" layoutY="86.0" text=":">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <ChoiceBox fx:id="fiHour" layoutX="640.0" layoutY="128.0" prefHeight="31.0" prefWidth="100.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <ChoiceBox fx:id="fiMin" layoutX="764.0" layoutY="128.0" prefHeight="31.0" prefWidth="100.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <Label layoutX="750.0" layoutY="130.0" text=":">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <ChoiceBox fx:id="priority" layoutX="640.0" layoutY="175.0" prefHeight="31.0" prefWidth="225.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <Label layoutX="566.0" layoutY="91.0" text="Start-time">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="567.0" layoutY="135.0" text="End-time">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="datePicker" layoutX="303.0" layoutY="121.0" prefHeight="31.0" prefWidth="225.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></DatePicker>
+      <Label layoutX="567.0" layoutY="232.0" text="Status">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="567.0" layoutY="182.0" text="Priority">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="status" layoutX="640.0" layoutY="225.0" prefHeight="31.0" prefWidth="225.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <Label layoutX="566.0" layoutY="282.0" text="Category">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="category" layoutX="640.0" layoutY="275.0" prefHeight="31.0" prefWidth="225.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <ChoiceBox fx:id="forwardingFormat" layoutX="564.0" layoutY="388.0" prefHeight="31.0" prefWidth="301.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <TextField fx:id="workerName" layoutX="564.0" layoutY="327.0" prefHeight="31.0" prefWidth="301.0" promptText="Enter the Worker Name here...">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></TextField>
+      <Label layoutX="566.0" layoutY="364.0" text="Forwarding Format">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="fileExtension" layoutX="564.0" layoutY="452.0" prefHeight="31.0" prefWidth="301.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></ChoiceBox>
+      <Label layoutX="566.0" layoutY="427.0" text="File Extension">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="138.0" layoutY="48.0" text="Forward Work List">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

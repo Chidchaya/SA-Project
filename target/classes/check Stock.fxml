@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timetable.controllers.CheckStockController">
+   <children>
+      <ImageView fx:id="background" fitHeight="600.0" fitWidth="904.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="354.0" layoutY="80.0" text="Check Stock">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Button fx:id="selectPlanBtn" layoutX="105.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleSelectPlanBtnOnAction" prefHeight="39.0" prefWidth="203.0" style="-fx-background-radius: 10;" text="Select Plan">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="selectThreadNeedleBtn" layoutX="105.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleSelectThreadNeedleBtnOnAction" style="-fx-background-radius: 10;" text="Select Thread&amp;Needle">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="selectElasticBtn" layoutX="105.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleSelectElasticBtnOnAction" prefHeight="39.0" prefWidth="203.0" style="-fx-background-radius: 10;" text="Select Elastic">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="selectButtonsBtn" layoutX="105.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleSelectButtonsBtnOnAction" prefHeight="39.0" prefWidth="203.0" style="-fx-background-radius: 10;" text="Select Buttons">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="selectFabricBtn" layoutX="105.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleSelectFabricBtnOnAction" prefHeight="39.0" prefWidth="203.0" style="-fx-background-radius: 10;" text="Select Fabric">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="addFabricBtn" layoutX="616.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleAddFabricBtnOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-radius: 10;" text="Add Fabric">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="addElasticBtn" layoutX="616.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleAddElasticBtnOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-radius: 10;" text="Add Elastic">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="addThreadNeedleBtn" layoutX="616.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleAddThreadNeedleBtnOnAction" style="-fx-background-radius: 10;" text="Add Thread&amp;Needle">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="addPlanBtn" layoutX="615.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleAddPlanBtnOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-radius: 10;" text="Add Plan">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Button fx:id="addButtonsBtn" layoutX="615.0" layoutY="408.0" mnemonicParsing="false" onAction="#handleAddButtonsBtnOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-radius: 10;" text="Add Buttons">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Label fx:id="FabricLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="213.0" text="FabricLabel" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label fx:id="ElasticLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="263.0" text="ElasticLabel" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label fx:id="PlanLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="364.0" text="PlanLabel" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label fx:id="ButtonsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="415.0" text="ButtonsLabel" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label fx:id="ThreadNeedleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="313.0" text="ThreadNeedleLabel" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Button fx:id="nextBtn" layoutX="105.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleNextCheckStockControllerToHomeButton" prefHeight="39.0" prefWidth="699.0" text="Comfirm">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Button>
+      <Label layoutX="147.0" layoutY="151.0" text="Select Sort">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Label layoutX="660.0" layoutY="151.0" text="Add Sort">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Label layoutX="405.0" layoutY="151.0" text="Quantity">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

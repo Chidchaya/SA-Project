@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timetable.controllers.CreatorController">
+   <children>
+      <ImageView fx:id="background" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="340.0" layoutY="119.0" text="Spain Group">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <ImageView fx:id="image" fitHeight="200.0" fitWidth="200.0" layoutX="356.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/your_image.jpg" />
+         </image></ImageView>
+      <Button layoutX="679.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleBackCreatorToHomeButton" prefHeight="51.0" prefWidth="167.0" text="BACK TO HOME">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Button>
+      <ImageView fx:id="image1" fitHeight="200.0" fitWidth="222.0" layoutX="592.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/ying_image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image2" fitHeight="199.0" fitWidth="222.0" layoutX="105.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/im_image.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="342.0" layoutY="432.0" text="Natthakarn Techawong">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="472.0" text="6210450067">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="612.0" layoutY="432.0" text="Sunicha Fueangfu">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="635.0" layoutY="472.0" text="6210450776">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="432.0" text="Chidchaya Jenkanpana">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="472.0" text="6210451128">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

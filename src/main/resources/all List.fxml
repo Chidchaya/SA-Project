@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timetable.controllers.AllListController">
+    <children>
+        <ImageView fx:id="background" fitHeight="600.0" fitWidth="904.0" pickOnBounds="true" preserveRatio="true" />
+        <TableView fx:id="infoGeneralTable" layoutX="40.0" layoutY="75.0" prefHeight="422.0" prefWidth="296.0">
+            <effect>
+                <DropShadow color="WHITE" />
+            </effect></TableView>
+        <TableView fx:id="infoCategoryTable" layoutX="661.0" layoutY="75.0" prefHeight="422.0" prefWidth="203.0">
+            <effect>
+                <DropShadow color="WHITE" />
+            </effect></TableView>
+        <Button layoutX="803.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleBackAllListToToHomeButton" prefHeight="51.0" prefWidth="61.0" text="Back">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <effect>
+                <DropShadow color="WHITE" />
+            </effect>
+        </Button>
+        <Button fx:id="updateGeneral" layoutX="40.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleUpdateGeneralButton" prefHeight="51.0" prefWidth="296.0" text="Update Design List">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <effect>
+                <DropShadow color="WHITE" />
+            </effect>
+        </Button>
+        <Button layoutX="660.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleToCategoryButton" prefHeight="51.0" prefWidth="134.0" text="Add Category">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <effect>
+                <DropShadow color="WHITE" />
+            </effect>
+        </Button>
+        <Label layoutX="126.0" layoutY="36.0" text="Design List">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+            <effect>
+                <DropShadow color="WHITE" />
+            </effect>
+        </Label>
+        <Label layoutX="689.0" layoutY="36.0" text="Category List">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+            <effect>
+                <DropShadow color="WHITE" />
+            </effect>
+        </Label>
+      <TableView fx:id="infoCustomerTable" layoutX="350.0" layoutY="75.0" prefHeight="422.0" prefWidth="296.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </TableView>
+      <Label layoutX="422.0" layoutY="36.0" text="Customer List">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Button fx:id="addCustomer" layoutX="351.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleToCustomerButton" prefHeight="51.0" prefWidth="296.0" text="Add Customer">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Button>
+    </children>
+</AnchorPane>
